@@ -7,3 +7,5 @@ The project has been developed using
 - VueJS and its Composition API for application logic and state management
 - TailwindCSS for styling and responsive design
 - TheMealDB API for retrieving meals and their recipes
+
+**DEMO:** https://meal-quest.netlify.app/
