@@ -18,7 +18,7 @@
         <h2 class="text-2xl font-semibold mb-2">Ingredients</h2>
         <ul>
           <template v-for="(el, index) of new Array(20)">
-            <li v-if="meal[`strIngredient${index + 1}`]" :key="index">
+            <li v-if="meal[`strIngredient${index + 1}`].trim()" :key="index">
               {{ index + 1 }}.
               {{
                 $filters.capitalizeFirstLetter(
@@ -33,7 +33,7 @@
         <h2 class="text-2xl font-semibold mb-2">Measures</h2>
         <ul>
           <template v-for="(el, index) of new Array(20)">
-            <li v-if="meal[`strMeasure${index + 1}`]" :key="index">
+            <li v-if="meal[`strMeasure${index + 1}`].trim()" :key="index">
               {{ index + 1 }}.
               {{
                 $filters.capitalizeFirstLetter(meal[`strMeasure${index + 1}`])
