@@ -7,7 +7,10 @@
         <strong class="font-bold">Category:</strong> {{ meal.strCategory }}
       </div>
       <div><strong class="font-bold">Area:</strong> {{ meal.strArea }}</div>
-      <div><strong class="font-bold">Tags:</strong> {{ meal.strTags }}</div>
+      <div>
+        <strong class="font-bold">Tags:</strong>
+        {{ meal.strTags ? meal.strTags : "None" }}
+      </div>
     </div>
 
     <div class="my-3">
